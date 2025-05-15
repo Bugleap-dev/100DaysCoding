@@ -6,7 +6,7 @@
 
 ## Table of Contents
 1. [Definition](#Definition)
-2. [Parameters](##Parameters)
+2. [Parameters](#parameters)
 3. [Difference between Arguments and Parameters](#differnce-between-arguments-and-parameters)
 4. [Differnce between using Comma and plus for Concatenation](#differnce-between-using-comma-and-plus--for-concatenation)
 5. [String](#string)
