@@ -41,10 +41,10 @@ This repo tracks my journey with **daily logs, code snippets, mini-projects, and
 ## 📂 Repository Structure  
 ```bash
 100DaysCoding/
-│── day-001/
-│   ├── notes-001.md
-│   ├── code-002.py
-│── day-002/
+│── day-01/
+│   ├── notes-01.md
+│   ├── code-02.py
+│── day-02/
 │── ...
 │── projects/
 │── docs/
