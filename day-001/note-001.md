@@ -55,8 +55,8 @@
 - **Concatenation**: the process of joining two or more string into a new string. This is done using operators the ***plus operator (+).***
 
 ### ***DIFFERENCE BETWEEN USING COMMA(,) AND PLUS (+) FOR CONCATENATION***
-   * Using + (Concatenation Operator): joins strings together with no space. Both operands must be string.
-   * Using , (concatenation operator): Automatically adds a space between items. Can mix data types(e.g string and int without conversion).
+   * Using **+** (Concatenation Operator): joins strings together with no space. Both operands must be string.
+   * Using **,** (concatenation operator): Automatically adds a space between items. Can mix data types(e.g string and int without conversion).
 
 **FROM PYTHON DOCUMENATION:**
 - *docs.python.org/3/library/functions.html*
