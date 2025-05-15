@@ -1,4 +1,4 @@
-# **DAY 001 - 15/04/2025**
+# **DAY 001 - 14/05/2025**
 
 # **CS50P: Introduction To Programming with Python**
     
@@ -7,8 +7,8 @@
 ## Table of Contents
 1. [Definition](#Definition)
 2. [Parameters](#parameters)
-3. [Difference between Arguments and Parameters](#differnce-between-arguments-and-parameters)
-4. [Differnce between using Comma and plus for Concatenation](#differnce-between-using-comma-and-plus--for-concatenation)
+3. [Difference between Arguments and Parameters](#difference-between-arguments-and-parameters)
+4. [Differnce between using Comma and plus for Concatenation](#difference-between-using-comma-and-plus--for-concatenation)
 5. [String](#string)
 6. [Integer and float](#integer-and-float)
 7. [Python Interactive mode](#python-interactive-mode)
@@ -22,7 +22,7 @@
 # Definition
 - **$code hello.py**: Creates a file "hello" in python(py) format
 
-- **Syntax**: refers to the sedof rules that defines hoe code must be written for the computer to understand it, i.e Syntax = the rules for writing code correctly.
+- **Syntax**: refers to the set of rules that defines how code must be written for the computer to understand it, i.e Syntax = the rules for writing code correctly.
 
 - **$python hello.py**: runs the python code "hello.py"
 
@@ -48,13 +48,13 @@
 - * Name parameter: parameters that must be passed in the correct order.
 - * Position parameter: parameters with default values, used if no argument is provided.
 
-### ***DIFFERNCE BETWEEN ARGUMENTS AND PARAMETERS***
+### ***DIFFERENCE BETWEEN ARGUMENTS AND PARAMETERS***
    * Parameters acts a placeholder for the values that will be passed.
    * While Arguments are actual values passed to the function when you call it.
 
 - **Concatenation**: the process of joining two or more string into a new string. This is done using operators the ***plus operator (+).***
 
-### ***DIFFERNCE BETWEEN USING COMMA(,) AND PLUS (+) FOR CONCATENATION***
+### ***DIFFERENCE BETWEEN USING COMMA(,) AND PLUS (+) FOR CONCATENATION***
    * Using + (Concatenation Operator): joins strings together with no space. Both operands must be string.
    * Using , (concatenation operator): Automatically adds a space between items. Can mix data types(e.g string and int without conversion).
 
@@ -69,11 +69,11 @@
     - * sep='' : seperator between the objects(default is a space).
     - * end=\n : what to print at the end(default is newline).
 
-- **\n** is the *newline character*. It tells the program to move the cursor to the next line when printing text. *\n* = "linebreak"
+- **\n** is the ***newline character***. It tells the program to move the cursor to the next line when printing text. ***\n*** = "linebreak"
 
 - * **USING QUOTATION MARKS INSIDE PRINT() FUNCTION**
     - * Using Escape character(\n)
-    - * Using Different quotation mark, single quotation(''), double quotation, (""), triple quoatation("' '")
+    - * Using Different quotation mark, single quotation(''), double quotation, (""), triple quotation("' '")
 
 - **F-string**: is a way to make strings that include variables or expressions directly inside them by putting an **f** before the string and using {} to insert values.
 
@@ -101,9 +101,9 @@
 - * Arithmetic operators:
    - * **Addition (+)**: adds two values.
    - * **Sutraction(-)**:subtracts the right operand from the left.
-   - * **Multiplication(*)**: multiplies teo values.
+   - * **Multiplication(*)**: multiplies two values.
    - * **Division(/)**: divides and return a float.
-   - * **Floor(//)**: divides and retuen the integer part (floor) of the result.
+   - * **Floor(//)**: divides and return the integer part (floor) of the result.
    - * **Modulus(%)**: returns the remainder of the division.
 
 ```python
@@ -145,14 +145,14 @@
       - - if omitted, it rounds to the nearest **whole number**.
       - - if given, it rounds to that many decimal places.
 
-### Round Half():
+### **Round Half():**
    Python uses a rule called ***ROUND HALF TO EVEN***, ALSO KNOWN AS ***BANKER'S ROUNDING*** If a number is exactly halfway between two integers (like -2.5 is between -2 and -3 ), ***python will round to the nearest even number.***
 
 ### * **DEF FUNCTION:**
    - * def is used to define a function.
 
 ### **RETURN statement:**
-   - * return statement is used in a function to send a value back to the caller. It ends the function and returns the apecified value.
+   - * return statement is used in a function to send a value back to the caller. It ends the function and returns the specified value.
    - * reurn statement syntax:
    ```python
          def function():

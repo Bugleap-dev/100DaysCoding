@@ -130,6 +130,12 @@ l = j/k
 
 #######
 
+# F-string
+age = 23
+print(f"I am {age} years old.")  # Output: I am 23 years old.
+
+#######
+
 print(f"{l:.1f}")                   #Output: 19.5
 print(f"{l:.2f}")                   #Output: 19.46
 print(f"{l:.3f}")                   #Output: 19.462
