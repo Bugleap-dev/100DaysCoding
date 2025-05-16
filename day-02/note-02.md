@@ -15,3 +15,16 @@
     - * *clear* - clear terminal (OR You can press **Ctrl + L**)
 
 
+## EXERCISES:
+These exercises are based on the concepts covered in **Lecture 0: Function & Variable**.
+
+---
+
+## 🔹 1. Print Basics
+
+**1. Print with Comma and Plus**  
+Write a program that prints the following using both `,` and `+`:
+
+Hello World!
+Hello-World!
+Hello World!
