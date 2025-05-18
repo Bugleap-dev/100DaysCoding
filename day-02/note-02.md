@@ -1,8 +1,21 @@
 # **DAY 02 - 15/05/2025**
 
 **CS50P: Introduction To Programming with Python**
+## Table of Contents
+1. [Shorts](#shorts)
+2. [Exercises](#exercises)
+    - [Print basics](#-1-print-basics)
+    - [Input basics](#-2-input--output)
+    - [String methods](#-3-string-methods)
+    - [Integer and flaot](#-4-integer-and-float)
+    - [Round function](#-5-round-function)
+    - [Defining functions](#-6-defining-functions)
+    - [Return vs print](#-7-return-vs-print)
+    - [Bonus Challenge](#-8-bonus-challenge)
 
-**SHORTS**
+---
+
+## **SHORTS**
 - **Visual Studio Code for CS50**
 - * List of visual studio command lines.
     - * *ls* - list all files in current directory.

@@ -131,10 +131,64 @@ print(f"Your firstname: {firstname}")
 print(f"Your firstname: {lastname}")
 
 # 🔹 7. Return vs Print
-**a. Add Function with Return**
-Create a function add(a, b) that returns the sum.
-Get two numbers from the user and print the result.
 
-**b. Square Function**
-Write a function square(n) that returns n ** 2.
-Prompt the user and print the squared value.
+#a. Add Function with Return
+def main():
+    num5 = int(input("Enter a number: "))
+    num6 = int(input("Enter a number: "))
+    sum = add(num5,num6)
+    print(f"Summation: {sum}")
+
+def add(a,b)
+    return a + b
+
+
+main()
+
+
+#b. Square Function
+def main():
+    num7 = int(input("Enter a number: "))
+    square = square(num7)
+
+def square(n):
+    return n * n
+
+
+main()
+
+# 🔹 8. Bonus Challenge
+
+# a. Formatted Division Output
+def main():
+    num8 = float(input("Enter a number: "))
+    num9 = float(input("Enter a number: "))
+
+    result = divide(num8,num9)
+    print(f"Result in 1 decimal place: {result:.1f}")
+    print(f"Result in 2 decimal place: {result:.2f}")
+    print(f"Result in 3 decimal place: {result:.3f}")
+
+
+def divide(a,b):
+    return a / b
+
+main()
+
+
+# b. Tip Calculator
+
+def main():
+    total_amount = input("Enter total amount without Currency sign: ").strip()
+    float_amount = float(total_amount)
+
+    tip_percentage = input("Enter tip percentage: ").strip()
+    float_percent = float(tip_percentage)
+
+    amount = calculate(float_amount,float_percent)
+    print(f"Your amount to pay: {amount}")
+
+def calculate(a,b):
+    return a + (a * (b / 100))
+
+main()
