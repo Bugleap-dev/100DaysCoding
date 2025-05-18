@@ -150,7 +150,7 @@ main()
 def main():
     num7 = int(input("Enter a number: "))
     result = square(num7)
-    print(f"square: {res]}")
+    print(f"square: {result}")
 def square(n):
     return n * n
 
