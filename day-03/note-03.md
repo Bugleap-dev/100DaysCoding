@@ -1,9 +1,9 @@
 # **DAY 03 - 16/05/2025**
 
-**CS50P: Introduction To Programming with Python**
+# **CS50P: Introduction To Programming with Python**
 
 # PSET 0
-![Pset0](pset.png)
+![Pset0](pset0.png)
 
 LINK: [https://cs50.harvard.edu/python/2022/psets/0/](https://cs50.harvard.edu/python/2022/psets/0/)
 
