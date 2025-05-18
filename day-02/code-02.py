@@ -33,7 +33,7 @@ def main():
 def say(phrase):
     print(phrase + " " + emoticon)
 
-main
+main()
 
 #Output:
 # Is anyone there? :(
@@ -101,7 +101,7 @@ num4 = input("Enter your number: ")
 
 addition = float(num3) + float(num4)
 print(f"Sum: {addition}")
-print(f"Rounding to 1 decimal place: {addition:.1f}")
+print(f"Rounding to 1 decimal place: {addition:.1f}")               # OR print(f"Rounding to 1 decimal place: {round(addition, 1)}")
 print(f"Rounding to 2 decimal place: {addition:.2f}")
 print(f"Rounding to 3 decimal place: {addition:.3f}")
 
@@ -128,7 +128,7 @@ name4 = input("Enter your name in Firstname, Lastname order:")
 firstname,lastname = name4.split(" ")
 
 print(f"Your firstname: {firstname}")
-print(f"Your firstname: {lastname}")
+print(f"Your lastname: {lastname}")
 
 # 🔹 7. Return vs Print
 
@@ -139,7 +139,7 @@ def main():
     sum = add(num5,num6)
     print(f"Summation: {sum}")
 
-def add(a,b)
+def add(a,b):
     return a + b
 
 
@@ -149,8 +149,8 @@ main()
 #b. Square Function
 def main():
     num7 = int(input("Enter a number: "))
-    square = square(num7)
-
+    result = square(num7)
+    print(f"square: {res]}")
 def square(n):
     return n * n
 
