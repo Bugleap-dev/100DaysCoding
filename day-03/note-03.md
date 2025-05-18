@@ -3,6 +3,8 @@
 **CS50P: Introduction To Programming with Python**
 
 # PSET 0
+![Pset0](pset.png)
+
 LINK: [https://cs50.harvard.edu/python/2022/psets/0/](https://cs50.harvard.edu/python/2022/psets/0/)
 
 
