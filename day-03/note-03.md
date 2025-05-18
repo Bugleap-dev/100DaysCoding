@@ -1,54 +1,76 @@
-# **DAY 005 - 16/05/2025**
+# **DAY 03 - 16/05/2025**
 
 **CS50P: Introduction To Programming with Python**
 
-## LECTURE 1 - CONDITIONALS
+# PSET 0
+LINK: [https://cs50.harvard.edu/python/2022/psets/0/](https://cs50.harvard.edu/python/2022/psets/0/)
 
-## Table of Contents
-1. [Comparison Operators](#comparison-operators)
-2. [Conditional Statements](#conditional-statements)
-   - [if Statement](#if-statement)
-   - [elif (Else If)](#elif-else-if)
-   - [else](#else)
-3. [Logical Operators](#logical-operators)
-   - [or](#or)
-   - [and](#and)
 
----
+## 1. Indoor Voice
+link: [https://cs50.harvard.edu/python/2022/psets/0/indoor/](https://cs50.harvard.edu/python/2022/psets/0/indoor/)
 
-## Comparison Operators
+In a file called **indoor.py**, implement a program in Python that prompts the user for input and then outputs that same input in lowercase. Punctuation and whitespace should be outputted unchanged. You’re welcome, but not required, to prompt the user explicitly, as by passing a **str** of your own as an argument to **input**.
 
-| Operator | Meaning                          | Example          |
-|:---------|:----------------------------------|:-----------------|
-| `>`       | Greater than                     | `5 > 3` → `True`  |
-| `<`       | Less than                        | `2 < 7` → `True`  |
-| `>=`      | Greater than or equal to          | `5 >= 5` → `True` |
-| `<=`      | Less than or equal to             | `4 <= 6` → `True` |
-| `!=`      | Not equal to                     | `5 != 3` → `True` |
-| `==`      | Equal to                         | `5 == 5` → `True` |
-| `%`       | Modulus (remainder after division) | `7 % 3` → `1`     |
+Hints:
+ - Recall that input returns a str, per [docs.python.org/3/library/functions.html#input](docs.python.org/3/library/functions.html#input).
+ - Recall that a str comes with quite a few methods, per [docs.python.org/3/library/stdtypes.html#string-methods](docs.python.org/3/library/stdtypes.html#string-methods).
 
----
+## 2. Playback Speed
+link: [https://cs50.harvard.edu/python/2022/psets/0/playback/](https://cs50.harvard.edu/python/2022/psets/0/playback/)
 
-## Conditional Statements
+In a file called **playback.py**, implement a program in Python that prompts the user for input and then outputs that same input, replacing each space with **...** (i.e., three periods).
 
-### `if` Statement
-Executes a block of code if a specified condition is `True`.
+Hints:
+ - Recall that input returns a str, per [docs.python.org/3/library/functions.html#input](docs.python.org/3/library/functions.html#input).
+ - Recall that a str comes with quite a few methods, per [docs.python.org/3/library/stdtypes.html#string-methods](docs.python.org/3/library/stdtypes.html#string-methods).
+
+## 3. Making Faces:
+link: [https://cs50.harvard.edu/python/2022/psets/0/faces/](https://cs50.harvard.edu/python/2022/psets/0/faces/)
+
+In a file called **faces.py**, implement a function called **convert** that accepts a **str** as input and returns that same input with any **:)** converted to 🙂 (otherwise known as a slightly smiling face) and any **:(** converted to 🙁 (otherwise known as a slightly frowning face). All other text should be returned unchanged.
+
+Then, in that same file, implement a function called **main** that prompts the user for input, calls **convert** on that input, and prints the result. You’re welcome, but not required, to prompt the user explicitly, as by passing a **str** of your own as an argument to **input**. Be sure to call main at the bottom of your file.
+
+Hints:
+ - Recall that input returns a str, per [docs.python.org/3/library/functions.html#input](docs.python.org/3/library/functions.html#input).
+ - Recall that a str comes with quite a few methods, per [docs.python.org/3/library/stdtypes.html#string-methods](docs.python.org/3/library/stdtypes.html#string-methods).
+ - An emoji is actually just a character, so you can quote it like any **str**, a la "😐". And you can copy and paste the emoji from this page into your own code as needed.
+
+## 4. Einstein:
+link: [https://cs50.harvard.edu/python/2022/psets/0/einstein/](https://cs50.harvard.edu/python/2022/psets/0/einstein/)
+
+In a file called einstein.py, implement a program in Python that prompts the user for mass as an integer (in kilograms) and then outputs the equivalent number of Joules as an integer. Assume that the user will input an integer.
+
+Hints:
+ - Recall that input returns a str, per [docs.python.org/3/library/functions.html#input](docs.python.org/3/library/functions.html#input).
+ - Recall that int can convert a str to an int, per [docs.python.org/3/library/functions.html#int](docs.python.org/3/library/functions.html#int).
+ - Recall that Python comes with several built-in functions, per [docs.python.org/3/library/functions.html](docs.python.org/3/library/functions.html).
+
+## 5. Tip Calculator
+link: [https://cs50.harvard.edu/python/2022/psets/0/tip/](https://cs50.harvard.edu/python/2022/psets/0/tip/)
+
+In the United States, it’s customary to leave a tip for your server after dining in a restaurant, typically an amount equal to 15% or more of your meal’s cost. Not to worry, though, we’ve written a tip calculator for you, below!
 
 ```python
-x = 10
-if x > 5:
-    print("x is greater than 5")
-```
-### `elif` (Else If)
-Checks another condition if the previous if (or elif) was False.
+def main():
+    dollars = dollars_to_float(input("How much was the meal? "))
+    percent = percent_to_float(input("What percentage would you like to tip? "))
+    tip = dollars * percent
+    print(f"Leave ${tip:.2f}")
 
-## Logical Operators
-### or
-Returns True if at least one condition is True.
 
-```python
-x = 5
-if x < 3 or x > 4:
-    print("x is either less than 3 or greater than 4")
+def dollars_to_float(d):
+    # TODO
+
+
+def percent_to_float(p):
+    # TODO
+
+
+main()
 ```
+
+Hints
+ - Recall that input returns a str, per [docs.python.org/3/library/functions.html#input](docs.python.org/3/library/functions.html#input).
+ - Recall that float can convert a str to a float, per [docs.python.org/3/library/functions.html#float](docs.python.org/3/library/functions.html#float).
+ - Recall that a str comes with quite a few methods, per [docs.python.org/3/library/stdtypes.html#string-methods](docs.python.org/3/library/stdtypes.html#string-methods).
