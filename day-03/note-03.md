@@ -6,7 +6,17 @@
 ![Pset0](pset0.png)
 
 LINK: [https://cs50.harvard.edu/python/2022/psets/0/](https://cs50.harvard.edu/python/2022/psets/0/)
+ 
+ ---
 
+## Table of Contents
+1. [Indoor Voice](#1-indoor-voice)
+2. [Playback speed](#2-playback-speed)
+3. [Making Faces](#3-making-faces)
+4. [Einstein](#4-einstein)
+5. [Tip calculator](#5-tip-calculator)
+
+---
 
 ## 1. Indoor Voice
 link: [https://cs50.harvard.edu/python/2022/psets/0/indoor/](https://cs50.harvard.edu/python/2022/psets/0/indoor/)
