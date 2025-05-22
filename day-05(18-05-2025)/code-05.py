@@ -1,7 +1,7 @@
 # DAY 6 - 18/04/2025
 # CS50P: Introduction To Programming with Python
 
-# LECTURE 1 -CONDITIONALS
+# CONTINUATION OF LECTURE 1 -CONDITIONALS
 
 x = int(input("What's x? "))
 y = int(input("What's y? "))
@@ -104,5 +104,3 @@ match name:
     case _:
         print("Who?")
 
-
-##############################################

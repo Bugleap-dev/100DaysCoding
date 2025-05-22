@@ -2,7 +2,7 @@
 
 **CS50P: Introduction To Programming with Python**
 
-## LECTURE 1 - CONDITIONALS
+## CONTINUATION OF LECTURE 1 - CONDITIONALS
 
 ## Table of Contents
 1. [Boolean Type](#boolean-type)
