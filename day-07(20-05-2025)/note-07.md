@@ -10,21 +10,19 @@ LINK: [https://cs50.harvard.edu/python/2022/psets/1/](https://cs50.harvard.edu/p
  ---
 
 ## Table of Contents
-1. [Indoor Voice](#1-indoor-voice)
-2. [Playback speed](#2-playback-speed)
+1. [Deep Thought](#1-deep-thought)
+2. [Home Federal Saving Bank](#2-home-federal-savings-bank)
 
 ---
 
 ## 1. Deep Thought
 link: [https://cs50.harvard.edu/python/2022/psets/1/deep/](https://cs50.harvard.edu/python/2022/psets/1/deep/)
 
-n deep.py, implement a program that prompts the user for the answer to the Great Question of Life, the Universe and Everything, outputting Yes if the user inputs 42 or (case-insensitively) forty-two or forty two. Otherwise output No.
+In deep.py, implement a program that prompts the user for the answer to the Great Question of Life, the Universe and Everything, outputting Yes if the user inputs 42 or (case-insensitively) forty-two or forty two. Otherwise output No.
 
 Hints:
  - No need to convert the user’s input to an int if you check for equality with "42", a str, rather than 42, an int!
  - It’s okay if your output or the user’s wraps onto multiple lines.
-
----
 
 ## 2. Home Federal Savings Bank
 link: [https://cs50.harvard.edu/python/2022/psets/1/bank/](https://cs50.harvard.edu/python/2022/psets/1/bank/)
