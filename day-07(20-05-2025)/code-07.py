@@ -21,8 +21,9 @@ def forty_two(num):
         
 main()
 
-# 2. [Home Federal Saving Bank](#2-home-federal-savings-bank)
+#######################
 
+# 2. [Home Federal Saving Bank](#2-home-federal-savings-bank)
 
 def main():
     greet = input("Greeting: ")

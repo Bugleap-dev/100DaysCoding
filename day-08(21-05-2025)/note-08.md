@@ -53,7 +53,7 @@ Hints:
 x, y, z = expression.split(" ")
 
 ```
-will assign **1** to **x**, **+** to **y**, and **1** to **z**.
+will assign **1** to **x**, **+** to ```y```, and **1** to **z**.
 
 ## 3. Meal Time
 link: [https://cs50.harvard.edu/python/2022/psets/1/meal/](https://cs50.harvard.edu/python/2022/psets/1/meal/)
