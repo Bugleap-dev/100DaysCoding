@@ -47,13 +47,13 @@ For instance, if the user inputs **1 + 1**, your program should output 2.0. Assu
 Note that, just as **python** itself is an interpreter for Python, so will your **interpreter.py** be an interpreter for math!
 
 Hints:
- - Recall that a **str** comes with quite a few methods, per [docs.python.org/3/library/stdtypes.html#string-methods](docs.python.org/3/library/stdtypes.html#string-methods), including split, which separates a **str** into a sequence of values, all of which can be assigned to variables at once. For instance, if expression is a **str** like 1 + 1, then
+ - Recall that a `str` comes with quite a few methods, per [docs.python.org/3/library/stdtypes.html#string-methods](docs.python.org/3/library/stdtypes.html#string-methods), including split, which separates a `str` into a sequence of values, all of which can be assigned to variables at once. For instance, if expression is a `str` like 1 + 1, then
 
 ```py
 x, y, z = expression.split(" ")
 
 ```
-will assign **1** to **x**, **+** to ```y```, and **1** to **z**.
+will assign `1` to `x`, `+` to `y`, and `1` to `z`.
 
 ## 3. Meal Time
 link: [https://cs50.harvard.edu/python/2022/psets/1/meal/](https://cs50.harvard.edu/python/2022/psets/1/meal/)
