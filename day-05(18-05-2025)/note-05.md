@@ -1,6 +1,6 @@
 # **DAY 5 - 18/04/2025**
 
-**CS50P: Introduction To Programming with Python**
+# **CS50P: Introduction To Programming with Python**
 
 ## CONTINUATION OF LECTURE 1 - CONDITIONALS
 
