@@ -1,4 +1,7 @@
+# DAY 9 - 22/05/2025
+# CS50P: Introduction To Programming with Python
 
+# LECTURE 1 - LOOPS
 
 i = 3
 while i != 0:
