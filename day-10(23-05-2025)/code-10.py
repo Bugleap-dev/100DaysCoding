@@ -1,3 +1,8 @@
+# DAY 10 - 23/05/2025
+# CS50P: Introduction To Programming with Python
+
+# CONTINUATION OF LECTURE 1 - LOOPS
+
 students = ["Hermione", "Ron","Harry"]
 
 for student in students:
@@ -108,6 +113,3 @@ Output:
 ###
 
 """
-
-###############
-
