@@ -3,12 +3,30 @@
 
 # CONTINUATION OF LECTURE 1 - LOOPS
 
+####################
+
+students = ["Hermione", "Ron","Harry"]
+
+print(students)
+print(students[0])
+print(students[1])
+print(students[2])
+"""
+Output:
+['Hermione', 'Ron', 'Harry']
+Hermione
+Ron
+Harry
+"""
+
+##################
 students = ["Hermione", "Ron","Harry"]
 
 for student in students:
     print(student)
 
-"""Output:
+"""
+Output:
 Hermione
 Ron
 Harry
@@ -30,7 +48,7 @@ for i in range(len(students)):
 
 ################
 
-#dict:
+# DICTIONARY (dict):
 
 students = {
     "Hermione": "Griffindor",
@@ -40,6 +58,7 @@ students = {
     }
 
 print(students["Ron"])          #Output: "Griffindor"
+print(students["Harry"])        #Output: "Griffindor"
 
 for student in students:
     print(student)
@@ -51,6 +70,18 @@ Hermione
 Harry
 Ron
 Draco
+
+"""
+
+for student in students:
+    print(student, students[student])
+"""
+Output:
+
+Hermione Griffindor
+Harry Griffindor
+Ron Griffindor
+Draco Slytherin
 
 """
 
@@ -69,7 +100,7 @@ Draco, Slytherin
 
 ############
 
-#USING DICTIONARY IN LIST
+# USING DICTIONARY IN LIST
 students = [
 
     {"name": "Hermione", "house":"Griffindor", "patronus": "Otter"},
