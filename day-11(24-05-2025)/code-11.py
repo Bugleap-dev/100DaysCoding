@@ -1,114 +1,99 @@
+# DICTIONARY (dict):
 
-def main():
-    print_column(3)
+students = {
+    "Hermione": "Griffindor",
+    "Harry": "Griffindor",
+    "Ron": "Griffindor",
+    "Draco": "Slytherin"
+    }
 
-def print_column(height):
-    print("#\n" * height,end="")
+print(students["Ron"])          #Output: "Griffindor"
+print(students["Harry"])        #Output: "Griffindor"
 
-main()
+for student in students:
+    print(student)
 
 """
 Output:
 
-###
-###
-###
+Hermione
+Harry
+Ron
+Draco
+
+"""
+
+for student in students:
+    print(student, students[student])
+"""
+Output:
+
+Hermione Griffindor
+Harry Griffindor
+Ron Griffindor
+Draco Slytherin
+
+"""
+
+for student in students:
+    print(student, students[student],sep = ", ")
+
+"""
+Output:
+
+Hermione, Griffindor
+Harry, Griffindor
+Ron, Griffindor
+Draco, Slytherin
 
 """
 
 ############
 
-def main():
-    print_row(4)
+# USING DICTIONARY IN LIST
 
-def print_row(width):
-    print("#"*width)
+students = [
 
+    {"name": "Hermione", "house":"Griffindor", "patronus": "Otter"},
+    {"name":"Harry", "house":"Griffindor", "patronus": "Stag"},
+    {"name":"Ron", "house":"Griffindor","patronus": "Jack Russell terrier"},
+    {"name":"Draco", "house": "Slytherin", "patronus": None}
+]
 
-main()
-"""
-Output:
-
-####
-####
-####
-####
-
-"""
-
-#############
-
-def main():
-    print_square(4)
-
-def print_square(size):
-
-    #for each row in square
-    for i in range(size):
-
-        #for each brick in row
-        for j in range(size):
-            print("#", end="")
-            
-        print()    
-
-
-main()
+for student in students:
+    print(student["name"], student["house"], student["patronus"],sep = ", ")
 
 """
 Output:
 
-####
-####
-####
-####
+Hermione, Griffindor, Otter
+Harry, Griffindor, Stag
+Ron, Griffindor, Jack Russell terrier
+Draco, Slytherin, None
+
+"""
+
+##############
+
+# Mario:
+
+def main():
+    print_column(3)
+
+def print_column(height):
+    for i in range(height):
+        print("#")
+
+
+main()
+
+"""
+Output:
+
+###
+###
+###
 
 """
 
 ################
-
-def main():
-    print_square(4)
-
-
-def print_square(size):
-    for i in range(size):
-        print("#"*size)
-
-
-main()
-
-"""
-Output:
-
-####
-####
-####
-####
-
-"""
-
-################
-
-def main():
-    print_square(4)
-
-
-def print_column(size):
-    for i in range(size):
-        print_row(size)
-
-
-def print_row(width):
-    print("#"*width)
-main()
-
-"""
-Output:
-
-####
-####
-####
-####
-
-"""

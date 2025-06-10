@@ -1,147 +1,125 @@
 
-# SHORT: DICTIONARY METHODS
-
-WORDS = {
-    "HAIR": 4,
-    "CHAIR": 5,
-    "PAIR": 4
-}
+#SHORT : DICTOINARIES
 
 def main():
-    print("Welcome to Spelling Bee!")
-    print("Your letters are: A I P C R H G")
 
-    while len(WORDS) > 0:
-        print(f"{len(WORDS)} words left")
-        guess = input("Guess a word: ")
-
-        if guess.upper() == "HAIR":
-            print(f"{WORDS["HAIR"]} points")
-            WORDS.pop("HAIR")
-        
-        if guess.upper() == "CHAIR":
-            print(f"{WORDS["CHAIR"]} points")
-            WORDS.pop("CHAIR")
-
-        if guess.upper() == "PAIR":
-            print(f"{WORDS["PAIR"]} points")
-            WORDS.pop("PAIR")
-        
-        
-    print("That's the game!")
-    print("Total point: 13")
-
-
+    spacecraft = { 
+        "name": "Voyager 1",
+        "distance":163
+        }
     
+    report = create_report(spacecraft["name"],spacecraft["distance"])
+    
+    print(report)
+
+def create_report(name,distance):
+    
+    return f"""
+    ============= REPORT ==============
+
+    Name: {name}
+    Distance: {distance} AU
+
+    ===================================
+
+    """
+
 main()
 
 ########################
-WORDS = {
-    "HAIR": 4,
-    "CHAIR": 5,
-    "PAIR": 4,
-    "GRAPHIC": 7
-}
 
 def main():
-    print("Welcome to Spelling Bee!")
-    print("Your letters are: A I P C R H G")
+    spacecraft = { "name": "Voyager 1", "distance":163}
+    print(create_report(spacecraft))
 
-    while len(WORDS) > 0:
-        print(f"{len(WORDS)} words left")
-        guess = input("Guess a word: ")
-        guess_upper = guess.upper()
-
-        if guess_upper in WORDS:
-            print(f"{WORDS[guess_upper]} points")
-            if guess_upper == "GRAPHIC":
-                print("You've won")
-                WORDS.clear()
-            else:
-                WORDS.pop(guess_upper)
-        else:
-            print("Incorrect or already used word.")
-
-    print("That's the game!")
-
-main()
-
-######################3
-
-WORDS = {
-    "HAIR": 4,
-    "CHAIR": 5,
-    "PAIR": 4,
-    "GRAPHIC": 7
-}
-
-def main():
-    print("Welcome to Spelling Bee!")
-    print("Your letters are: A I P C R H G")
-
-    for word in WORDS:
-        print(f"{word} is worth {WORDS[word]}")
-main()
-
-###################
-
-WORDS = {
-    "HAIR": 4,
-    "CHAIR": 5,
-    "PAIR": 4,
-    "GRAPHIC": 7
-}
-
-def main():
-    print("Welcome to Spelling Bee!")
-    print("Your letters are: A I P C R H G")
-
-    for word, points in WORDS.items():
-        print(f"{word} was worth {points}")
-main()
-
-##################
-
-#SHORTS: FOR LOOP
-
-def main():
-    names = ["Mario", "Luigi", "Yoshi"]
-    for guests in names:
-        print(write_letter(guests, "Princess Peach"))
-
-
-def write_letter(receiver, sender):
+def create_report(spacecraft):
     return f"""
-    |-----------------------------------------------|    
-        Dear {receiver},
-        You are cordially invited to a ball at 
-        Peach's castle this evening, 7:00 PM.
+    ============= REPORT ==============
 
-        Sincerlely,
-        {sender}
-    |-----------------------------------------------|
+    Name: {spacecraft["name"]}
+    Distance: {spacecraft["distance"]} AU
+
+    ===================================
+
     """
 
 main()
 
-##########################
+#########################
 
 def main():
-    names = ["Mario", "Luigi", "Yoshi"]
-    for i in range(len(names)):
-        print(write_letter(names[i], "Princess Peach"))
 
+    spacecraft = { "name": "James Webb Space Telescsope"}
+    spacecraft["distance"] = 0.01
+    
+    print(create_report(spacecraft))
 
-def write_letter(receiver, sender):
+def create_report(spacecraft):
     return f"""
-    |-----------------------------------------------|    
-        Dear {receiver},
-        You are cordially invited to a ball at 
-        Peach's castle this evening, 7:00 PM.
+    ============= REPORT ==============
 
-        Sincerlely,
-        {sender}
-    |-----------------------------------------------|
+    Name: {spacecraft["name"]}
+    Distance: {spacecraft["distance"]} AU
+
+    ===================================
     """
 
 main()
+
+#########################
+
+spacecraft = {
+    "name": "James Webb Space Telescsope"
+    }
+spacecraft["distance"] = 0.01
+print(spacecraft.get("owner","Unknown"))                # .get(str,str) => is used to get the value of a key-value
+print(spacecraft)                                       # pair in a dictionary by stating the key, and it returns a default value if stated
+
+########################
+
+spacecraft = {
+    "name": "Voyager 1",
+    "distance" : "12",
+    "owner": "Benjamin"
+}
+spacecraft.update({
+    "company":"Umbrella corp.",
+    "location":"Milky way"
+    })
+
+print(spacecraft["location"])
+
+#########################
+
+distances = {
+    "Voyager 1": 163,
+    "Voyager 2": 135,
+    "Pioneer 10": 80,
+    "Pioneer 11": 44,
+    "New Horizon": 58
+}
+
+def main():
+    for name in distances.keys():
+        print(f"{name} is {distances[name]} AU from Earth.")
+
+
+main()
+#########################
+
+distances = {
+    "Voyager 1": 163,
+    "Voyager 2": 135,
+    "Pioneer 10": 80,
+    "Pioneer 11": 44,
+    "New Horizon": 58
+}
+
+def main():
+    for distance in distances.values():
+        print(f"{distance} AU is {convert(distance):,}m")
+
+def convert(au):
+    return au * 149597870700
+main()
+
