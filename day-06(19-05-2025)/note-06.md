@@ -3,27 +3,37 @@
 
 ## LECTURE 1 -CONDITIONALS
 
-## SHORTS - CONDITIONALS
+## CONTINUATION OF LECTURE 1 - CONDITIONALS
 
----
+## Table of Contents
+1. [Boolean Type](#boolean-type)
+2. [Pattern Matching](#pattern-matching)
 
-### 🧠 What I Learned Today:
-Today was all about *decision-making* in Python using `if`, `elif`, and `else`. I built a little game
-recommender that suggests a card game based on the number of players and how difficult you want it to be
 
----
+### Boolean Type
+`bool`
+The bool type represents one of two values: True or False.
 
-### 🛠️ What the Code Does:
-- Asks the user:  
-  - Do you want to play Multiplayer or Single-player?  
-  - Do you want something Difficult or Easy?
+```python
+is_active = True
+print(bool(0))   # False
+print(bool(5))   # True
+```
 
-- Based on the combo, it suggests a game:
-  - **Difficult + Multiplayer** → Poker  
-  - **Difficult + Single-player** → Klondike  
-  - **Easy + Multiplayer** → Hearts  
-  - **Easy + Single-player (or other)** → Clock  
+### Pattern Matching
+`match` Statement
+Introduced in Python 3.10. It checks a value against different cases (similar to switch in other languages).
 
-Simple idea, but great practice for branching logic!
+```python
+command = "start"
 
----
+match command:
+    case "start":
+        print("Starting the system...")
+    case "stop":
+        print("Stopping the system...")
+    case _:
+        print("Unknown command")
+case _: acts as a default if no other case matches.
+```
+
