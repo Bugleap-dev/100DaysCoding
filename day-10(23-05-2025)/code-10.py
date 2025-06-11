@@ -1,86 +1,41 @@
 # DAY 10 - 23/05/2025
 # CS50P: Introduction To Programming with Python
 
-# CONTINUATION OF LECTURE 1 - LOOPS
+# PSET 1
+
+# 1. [Deep Thought](#1-deep-thought)
 
 def main():
-    number = get_number()
-    meow(number)
+    response = input("What is the Answer to the Great Question of Life, the Universe, and Everything? ").lower().strip()
+    deep = forty_two(response)
+    print(deep)
 
-def get_number():
-    while True:
-        n = int(input("What's n?: "))
-        if n > 0:
-            break                       #OR YOU CAN USE:    retun n
-    return n                            #BECAUSE RETURN CAN BE USED TO BREAK OUT OF A LOOP AND END A FUNCITON
-
-def meow(n):
-    for _ in range(n):
-        print("meow")
-
-
+def forty_two(num):
+    match num:
+        case "42"|"forty two"|"forty-two":
+            return "Yes"
+        case _:
+            return "No"
+        
 main()
 
-#####
+#######################
+
+# 2. [Home Federal Saving Bank](#2-home-federal-savings-bank)
 
 def main():
-    number = get_number()
-    meow(number)
+    greet = input("Greeting: ")
+    greeting = hello(greet)
+    print(greeting)
 
-def get_number():
-    while True:
-        n = int(input("What's n?: "))
-        if n > 0:
-            return n
 
-def meow(n):
-    for _ in range(n):
-        print("meow")
-
+def hello(response):
+    response_lower = response.lower().strip()
+    if "hello" in response_lower:
+        return "$0"
+    elif response_lower[0] == "h":
+        return "$20"
+    else:
+        return "$100"
 
 main()
-
-####################
-
-students = ["Hermione", "Ron","Harry"]
-
-print(students)
-print(students[0])
-print(students[1])
-print(students[2])
-"""
-Output:
-['Hermione', 'Ron', 'Harry']
-Hermione
-Ron
-Harry
-"""
-
-##################
-students = ["Hermione", "Ron","Harry"]
-
-for student in students:
-    print(student)
-
-"""
-Output:
-Hermione
-Ron
-Harry
-"""
-#############
-
-students = ["Hermione", "Ron","Harry"]
-
-for i in range(len(students)):
-    print(str(i+1)+". ", students[i])
-
-""" Output:
-
-1.  Hermione
-2.  Ron
-3.  Harry
-
-"""
-
-################

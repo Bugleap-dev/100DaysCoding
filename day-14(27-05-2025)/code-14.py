@@ -1,103 +1,81 @@
-
-# SHORT: DICTIONARY METHODS
-
-WORDS = {
-    "HAIR": 4,
-    "CHAIR": 5,
-    "PAIR": 4
-}
+# CONTINUATION OF LECTURE 2 - LOOPS
 
 def main():
-    print("Welcome to Spelling Bee!")
-    print("Your letters are: A I P C R H G")
+    number = get_number()
+    meow(number)
 
-    while len(WORDS) > 0:
-        print(f"{len(WORDS)} words left")
-        guess = input("Guess a word: ")
+def get_number():
+    while True:
+        n = int(input("What's n?: "))
+        if n > 0:
+            break                       #OR YOU CAN USE:    retun n
+    return n                            #BECAUSE RETURN CAN BE USED TO BREAK OUT OF A LOOP AND END A FUNCITON
 
-        if guess.upper() == "HAIR":
-            print(f"{WORDS["HAIR"]} points")
-            WORDS.pop("HAIR")
-        
-        if guess.upper() == "CHAIR":
-            print(f"{WORDS["CHAIR"]} points")
-            WORDS.pop("CHAIR")
+def meow(n):
+    for _ in range(n):
+        print("meow")
 
-        if guess.upper() == "PAIR":
-            print(f"{WORDS["PAIR"]} points")
-            WORDS.pop("PAIR")
-        
-        
-    print("That's the game!")
-    print("Total point: 13")
-
-
-    
-main()
-
-########################
-WORDS = {
-    "HAIR": 4,
-    "CHAIR": 5,
-    "PAIR": 4,
-    "GRAPHIC": 7
-}
-
-def main():
-    print("Welcome to Spelling Bee!")
-    print("Your letters are: A I P C R H G")
-
-    while len(WORDS) > 0:
-        print(f"{len(WORDS)} words left")
-        guess = input("Guess a word: ")
-        guess_upper = guess.upper()
-
-        if guess_upper in WORDS:
-            print(f"{WORDS[guess_upper]} points")
-            if guess_upper == "GRAPHIC":
-                print("You've won")
-                WORDS.clear()
-            else:
-                WORDS.pop(guess_upper)
-        else:
-            print("Incorrect or already used word.")
-
-    print("That's the game!")
 
 main()
 
-######################3
-
-WORDS = {
-    "HAIR": 4,
-    "CHAIR": 5,
-    "PAIR": 4,
-    "GRAPHIC": 7
-}
+#####
 
 def main():
-    print("Welcome to Spelling Bee!")
-    print("Your letters are: A I P C R H G")
+    number = get_number()
+    meow(number)
 
-    for word in WORDS:
-        print(f"{word} is worth {WORDS[word]}")
+def get_number():
+    while True:
+        n = int(input("What's n?: "))
+        if n > 0:
+            return n
+
+def meow(n):
+    for _ in range(n):
+        print("meow")
+
+
 main()
 
-###################
+####################
 
-WORDS = {
-    "HAIR": 4,
-    "CHAIR": 5,
-    "PAIR": 4,
-    "GRAPHIC": 7
-}
+students = ["Hermione", "Ron","Harry"]
 
-def main():
-    print("Welcome to Spelling Bee!")
-    print("Your letters are: A I P C R H G")
-
-    for word, points in WORDS.items():
-        print(f"{word} was worth {points}")
-main()
+print(students)
+print(students[0])
+print(students[1])
+print(students[2])
+"""
+Output:
+['Hermione', 'Ron', 'Harry']
+Hermione
+Ron
+Harry
+"""
 
 ##################
+students = ["Hermione", "Ron","Harry"]
+
+for student in students:
+    print(student)
+
+"""
+Output:
+Hermione
+Ron
+Harry
+"""
+#############
+
+students = ["Hermione", "Ron","Harry"]
+
+for i in range(len(students)):
+    print(str(i+1)+". ", students[i])
+
+""" Output:
+
+1.  Hermione
+2.  Ron
+3.  Harry
+
+"""

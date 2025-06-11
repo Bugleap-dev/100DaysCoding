@@ -1,125 +1,81 @@
+# LECTURE 2 - LOOPS
 
-#SHORT : DICTOINARIES
+i = 3
+while i != 0:
+    print("meow")
+    i = i-1
+
+#####
+
+i = 3
+while i != 0:
+    print("meow")
+    i -= 1              ##PYTHON SHORTHAND FOR (i = i - 1)
+
+#####
+
+i = 0
+while i < 3:
+    print("meow")
+    i += 1              ##PYTHON SHORTHAND FOR (i = i + 1)
+
+#####
+
+#for loop:
+for i in range(3):
+    print("meow")
+
+#####
+
+for _ in range(3):
+    print("meow")
+
+#####
+
+print("meow\n"*3,end="")
+
+###
+
+while True:
+    n = int(input("What's n?: "))
+    if n > 0:
+        break
+
+for _ in range(n):
+    print("meow")
+    print(_)
+
+#####
 
 def main():
+    num = int(input("what's n? "))
+    meow(num)
 
-    spacecraft = { 
-        "name": "Voyager 1",
-        "distance":163
-        }
+def meow(n):
+    while True:
+        if n > 0:
+            break
+
+    for _ in range(n):
+        print("meow")
     
-    report = create_report(spacecraft["name"],spacecraft["distance"])
+main()
+
+#####
+
+def main():
+    n = int(input("number of rows: "))
+    star(n)
     
-    print(report)
-
-def create_report(name,distance):
+def star(n):
+    while True:
+        if n > 0:
+            break
     
-    return f"""
-    ============= REPORT ==============
-
-    Name: {name}
-    Distance: {distance} AU
-
-    ===================================
-
-    """
-
+    one = 1
+    while n > one:
+        print("*"*one)
+        one +=1
 main()
 
-########################
-
-def main():
-    spacecraft = { "name": "Voyager 1", "distance":163}
-    print(create_report(spacecraft))
-
-def create_report(spacecraft):
-    return f"""
-    ============= REPORT ==============
-
-    Name: {spacecraft["name"]}
-    Distance: {spacecraft["distance"]} AU
-
-    ===================================
-
-    """
-
-main()
-
-#########################
-
-def main():
-
-    spacecraft = { "name": "James Webb Space Telescsope"}
-    spacecraft["distance"] = 0.01
-    
-    print(create_report(spacecraft))
-
-def create_report(spacecraft):
-    return f"""
-    ============= REPORT ==============
-
-    Name: {spacecraft["name"]}
-    Distance: {spacecraft["distance"]} AU
-
-    ===================================
-    """
-
-main()
-
-#########################
-
-spacecraft = {
-    "name": "James Webb Space Telescsope"
-    }
-spacecraft["distance"] = 0.01
-print(spacecraft.get("owner","Unknown"))                # .get(str,str) => is used to get the value of a key-value
-print(spacecraft)                                       # pair in a dictionary by stating the key, and it returns a default value if stated
-
-########################
-
-spacecraft = {
-    "name": "Voyager 1",
-    "distance" : "12",
-    "owner": "Benjamin"
-}
-spacecraft.update({
-    "company":"Umbrella corp.",
-    "location":"Milky way"
-    })
-
-print(spacecraft["location"])
-
-#########################
-
-distances = {
-    "Voyager 1": 163,
-    "Voyager 2": 135,
-    "Pioneer 10": 80,
-    "Pioneer 11": 44,
-    "New Horizon": 58
-}
-
-def main():
-    for name in distances.keys():
-        print(f"{name} is {distances[name]} AU from Earth.")
-
-
-main()
-#########################
-
-distances = {
-    "Voyager 1": 163,
-    "Voyager 2": 135,
-    "Pioneer 10": 80,
-    "Pioneer 11": 44,
-    "New Horizon": 58
-}
-
-def main():
-    for distance in distances.values():
-        print(f"{distance} AU is {convert(distance):,}m")
-
-def convert(au):
-    return au * 149597870700
-main()
-
+#####

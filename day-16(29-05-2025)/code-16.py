@@ -1,50 +1,114 @@
-import sys
-
-#################
-
-# SHORT: TUPLE
-
 def main():
-    coordinates = (42.376, -71.115)
-    
-    latitude,longitude = coordinates
+    print_column(3)
 
-    print(f"Longitude: {coordinates[1]}")
-    print(f"Latitude: {coordinates[0]}")
-
-    print(f"Longitude: {longitude}")
-    print(f"Latitude: {latitude}")
+def print_column(height):
+    print("#\n" * height,end="")
 
 main()
 
-#######
-
-def main():
-    coordinates_tuple = (42.376, -71.115)
-    coordinates_list = [42.376, -71.115]
-    coordinates_dict = {42.376, -71.115}
-    
-    print(f"{sys.getsizeof(coordinates_tuple)} bytes")
-    print(f"{sys.getsizeof(coordinates_list)} bytes")
-    print(f"{sys.getsizeof(coordinates_dict)} bytes")
-
-
-main()
-
-######################
-
-# SHORT: WHILE LOOPS
 """
+Output:
+
+###
+###
+###
+
+"""
+
+############
+
 def main():
-    moisture = sample()
-    Days = 0
-    print(f"Days: {Days}: Moisture is {moisture}%")
+    print_row(4)
 
-    while moisture > 20:
-        moisture = sample()
-        days +=1
-        print(f"Moisture is {moisture}%")
+def print_row(width):
+    print("#"*width)
 
-    print("Time to water")
+
 main()
 """
+Output:
+
+####
+####
+####
+####
+
+"""
+
+#############
+
+def main():
+    print_square(4)
+
+def print_square(size):
+
+    #for each row in square
+    for i in range(size):
+
+        #for each brick in row
+        for j in range(size):
+            print("#", end="")
+            
+        print()    
+
+
+main()
+
+"""
+Output:
+
+####
+####
+####
+####
+
+"""
+
+################
+
+def main():
+    print_square(4)
+
+
+def print_square(size):
+    for i in range(size):
+        print("#"*size)
+
+
+main()
+
+"""
+Output:
+
+####
+####
+####
+####
+
+"""
+
+################
+
+def main():
+    print_square(4)
+
+
+def print_column(size):
+    for i in range(size):
+        print_row(size)
+
+
+def print_row(width):
+    print("#"*width)
+main()
+
+"""
+Output:
+
+####
+####
+####
+####
+
+"""
+
