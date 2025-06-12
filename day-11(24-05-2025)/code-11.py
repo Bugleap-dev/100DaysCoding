@@ -1,5 +1,5 @@
 # PSET 1
-# 1. File Extensions
+# 3. File Extensions
 
 def main():
     file_name = input("File name: ")
@@ -32,7 +32,7 @@ main()
 
 ###########################
 
-# 2. Math Interpreter
+# 4. Math Interpreter
 
 def main():
     prompt = input("Expression: ")
@@ -63,7 +63,7 @@ main()
 
 ##########################
 
-# 3. Meal Time
+# 5. Meal Time
 
 def main():
     time = input("What time is it? ")
