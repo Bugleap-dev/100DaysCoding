@@ -4,8 +4,6 @@
 
 ## LECTURE 1 - CONDITIONALS
 
----
-
 ## Table of Contents
 1. [Comparison Operators](#comparison-operators)
 2. [Conditional Statements](#conditional-statements)

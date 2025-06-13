@@ -1,6 +1,7 @@
 # **DAY 02 - 15/05/2025**
 
 **CS50P: Introduction To Programming with Python**
+
 ## Table of Contents
 1. [Shorts](#shorts)
 2. [Exercises](#exercises)

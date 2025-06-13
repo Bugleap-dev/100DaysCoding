@@ -4,8 +4,6 @@
 
 # Lecture 1 – Conditionals (Continued)
 
----
-
 ## Table of Contents
 1. [Even or Odd Function](#even-or-odd-function)
 

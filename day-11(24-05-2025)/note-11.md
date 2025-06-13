@@ -1,4 +1,9 @@
-# CONTINUATION OF PSET 1
+# **DAY 11 - 22/05/2025**
+
+# **CS50P: Introduction To Programming with Python**
+
+## CONTINUATION OF PSET 1
+
 ![Pset1](pset1.png)
 
 LINK: [https://cs50.harvard.edu/python/2022/psets/1/](https://cs50.harvard.edu/python/2022/psets/1/)

@@ -1,4 +1,4 @@
-
+# DAY 22
 # SHORTS: STRING SLICING
 
 def main():

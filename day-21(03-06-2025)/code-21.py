@@ -1,3 +1,5 @@
+#DAY 21
+
 # SHORTS: LISTS
 
 results = ["Mario", "Luigi",]

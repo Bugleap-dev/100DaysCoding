@@ -1,6 +1,5 @@
+# DAY 23
 import sys
-
-#################
 
 # SHORT: TUPLE
 

@@ -2,38 +2,37 @@
 
 # **CS50P: Introduction To Programming with Python**
 
-Lecture 2 – Loops
-📘 Table of Contents
-While Loop
+## Lecture 2 – Loops
 
-While Loop with Condition Variants
+## Table of Contents
+1. [While Loop](#1-while-loop)
 
-For Loop with range()
+2. [While Loop with Condition Variants](#2-while-loop-with-condition-variants)
 
-String Multiplication
+3. [For Loop with range()](#3-for-loop-with-range)
 
-Input Validation Loop
+4. [String Multiplication](#4-string-multiplication)
 
-Function with Loop Logic
+5. [Input Validation Loop](#5-input-validation-loop)
 
-Star Pattern Using While Loop
+6. [Function with Loop Logic](#6-function-with-loop-logic)
 
-1. While Loop
+7. [Star Pattern Using While Loop](#7-star-pattern-using-while-loop)
+
+### 1. While Loop
 Repeats a block of code while a condition is True.
 
-python
-Copy
-Edit
+```py
 i = 3
 while i != 0:
     print("meow")
     i = i - 1
-2. While Loop with Condition Variants
+```
+
+### 2. While Loop with Condition Variants
 Shorthand assignment (i -= 1) and alternate condition (i < 3).
 
-python
-Copy
-Edit
+```py
 # Using shorthand
 i = 3
 while i != 0:
@@ -45,12 +44,12 @@ i = 0
 while i < 3:
     print("meow")
     i += 1
-3. For Loop with range()
+```
+
+### 3. For Loop with range()
 The for loop provides a clean way to repeat actions a set number of times.
 
-python
-Copy
-Edit
+```py
 # Using index variable
 for i in range(3):
     print("meow")
@@ -58,19 +57,19 @@ for i in range(3):
 # Ignoring index with underscore
 for _ in range(3):
     print("meow")
-4. String Multiplication
+```
+
+### 4. String Multiplication
 Repeating a string multiple times using *.
 
-python
-Copy
-Edit
+```py
 print("meow\n" * 3, end="")
-5. Input Validation Loop
+```
+
+### 5. Input Validation Loop
 Ensures the user inputs a positive number.
 
-python
-Copy
-Edit
+```py
 while True:
     n = int(input("What's n?: "))
     if n > 0:
@@ -79,12 +78,12 @@ while True:
 for _ in range(n):
     print("meow")
     print(_)
-6. Function with Loop Logic
+```
+
+### 6. Function with Loop Logic
 Encapsulating the meow logic in a function.
 
-python
-Copy
-Edit
+```py
 def main():
     num = int(input("what's n? "))
     meow(num)
@@ -97,19 +96,17 @@ def meow(n):
         print("meow")
 
 main()
-7. Star Pattern Using While Loop
+```
+
+### 7. Star Pattern Using While Loop
 Prints an increasing star (*) pattern:
 
-python-repl
-Copy
-Edit
+```py
 *
 **
 ***
 ...
-python
-Copy
-Edit
+
 def main():
     n = int(input("number of rows: "))
     star(n)
@@ -125,3 +122,4 @@ def star(n):
         one += 1
 
 main()
+```

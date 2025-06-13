@@ -5,8 +5,6 @@
 
 ## CONTINUATION OF LECTURE 1 - CONDITIONALS
 
----
-
 ## Table of Contents
 1. [Boolean Type](#boolean-type)
 
