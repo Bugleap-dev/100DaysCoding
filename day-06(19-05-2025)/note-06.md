@@ -1,14 +1,18 @@
 # DAY 6 - 19/05/2025
 # CS50P: Introduction To Programming with Python
 
-## LECTURE 1 -CONDITIONALS
+## LECTURE 1 - CONDITIONALS
 
 ## CONTINUATION OF LECTURE 1 - CONDITIONALS
 
+---
+
 ## Table of Contents
 1. [Boolean Type](#boolean-type)
+
 2. [Pattern Matching](#pattern-matching)
 
+---
 
 ### Boolean Type
 `bool`

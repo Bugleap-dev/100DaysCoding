@@ -1,3 +1,7 @@
+# DAY 13 - 26/05/2025
+
+# CS50P: Introduction To Programming with Python
+
 # LECTURE 2 - LOOPS
 
 i = 3

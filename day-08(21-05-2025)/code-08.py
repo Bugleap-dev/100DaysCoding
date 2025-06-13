@@ -2,7 +2,6 @@
 
 # **CS50P: Introduction To Programming with Python**
 
-
 #SHORTS - CONDITIONALS
 
 def main():

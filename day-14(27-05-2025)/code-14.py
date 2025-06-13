@@ -1,3 +1,7 @@
+# DAY 14 - 27/05/2025
+
+# CS50P: Introduction To Programming with Python
+
 # CONTINUATION OF LECTURE 2 - LOOPS
 
 def main():

@@ -2,6 +2,8 @@
 
 # **CS50P: Introduction To Programming with Python**
 
+--
+
 # PSET 0
 ![Pset0](pset0.png)
 
