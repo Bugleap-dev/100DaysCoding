@@ -16,7 +16,7 @@
 5. [Output Comparisons](#5-output-comparisons)
 
 ### 1. Printing Columns
-Using "\n" to repeat a vertical column of #:
+Using **"\n"** to repeat a vertical column of #:
 
 ```python
 def print_column(height):
