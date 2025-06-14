@@ -5,6 +5,7 @@
 ## Lecture 2 – Loops
 
 ## Table of Contents
+
 1. [While Loop](#1-while-loop)
 
 2. [While Loop with Condition Variants](#2-while-loop-with-condition-variants)

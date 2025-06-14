@@ -1,4 +1,4 @@
-# **DAY 13 - 26/05/2025**
+# **DAY 14 - 27/05/2025**
 
 # **CS50P: Introduction To Programming with Python**
 
@@ -6,17 +6,15 @@
 
 ## Table of Contents
 
-Using Return to Exit Loops
+1. [Using Return to Exit Loops](#1-using-return-to-exit-loops)
 
-Modular Loop with Functions
+2. [Modular Loop with Functions](#2-modular-loop-with-functions)
 
-Introduction to Lists
+3. [Introduction to Lists](#3-introduction-to-lists)
 
-Accessing List Elements
+4. [Accessing List Elements in a Loop](#4-accessing-list-elements-in-a-loop)
 
-Iterating Over Lists
-
-Enumerating Lists with Index
+6. [Enumerating Lists with Index](#5-enumerating-lists-with-index)
 
 ### 1. Using return to Exit Loops
 Using return in a function both exits the loop and ends the function early.
@@ -28,6 +26,7 @@ def get_number():
             break   # This can also be replaced by 'return n'
     return n
 ```
+
 ### 2. Modular Loop with Functions
 Encapsulates input validation and repetition logic in separate functions:
 ```py
@@ -47,7 +46,7 @@ def meow(n):
 
 main()
 ```
-3. Introduction to Lists
+### 3. Introduction to Lists
 Lists allow storage and access of multiple values in a single variable.
 
 ```py
