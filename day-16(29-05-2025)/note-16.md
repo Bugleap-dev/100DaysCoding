@@ -7,13 +7,13 @@
 ## Table of Contents
 1. [Printing Columns](#1-printing-columns)
 
-2. [Printing Rows](#2-printing-rowsPrinting Rows)
+2. [Printing Rows](#2-printing-rows)
 
 3. [Nested Loops for Grids and Squares](#3-nested-loops-for-grids-and-squares)
 
-Function Decomposition
+4. [Function Decomposition](#4-function-decomposition)
 
-Output Comparisons
+5. [Output Comparisons](#5-output-comparisons)
 
 ### 1. Printing Columns
 Using "\n" to repeat a vertical column of #:
