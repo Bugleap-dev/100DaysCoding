@@ -2,7 +2,7 @@
 
 # **CS50P: Introduction To Programming with Python**
 
-## EXERCISE:
+## EXERCISE
 
 Exercise generated with chatgpt:
 

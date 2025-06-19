@@ -58,6 +58,7 @@ Harry
 """
 
 ##################
+
 students = ["Hermione", "Ron","Harry"]
 
 for student in students:
@@ -76,7 +77,8 @@ students = ["Hermione", "Ron","Harry"]
 for i in range(len(students)):
     print(str(i+1)+". ", students[i])
 
-""" Output:
+""" 
+Output:
 
 1.  Hermione
 2.  Ron

@@ -1,123 +1,90 @@
-#SHORT : DICTOINARIES
+# DAY 18 - 31/05/2025
 
-def main():
+# CS50P: Introduction To Programming with Python
 
-    spacecraft = { 
-        "name": "Voyager 1",
-        "distance":163
-        }
-    
-    report = create_report(spacecraft["name"],spacecraft["distance"])
-    
-    print(report)
+# EXERCISE
 
-def create_report(name,distance):
-    
-    return f"""
-    ============= REPORT ==============
+## SET 3: Lists & Dictionaries
 
-    Name: {name}
-    Distance: {distance} AU
+## 1. Add "Luna" to the list below and print each student on a new line with their number (e.g., 1. Hermione, ...):
 
-    ===================================
+students = ["Hermione", "Ron", "Harry"]
 
-    """
+students.append("Luna")
 
-main()
+for student in range(len(students)):
+    print(student + 1,".",students[student])
 
-########################
-
-def main():
-    spacecraft = { "name": "Voyager 1", "distance":163}
-    print(create_report(spacecraft))
-
-def create_report(spacecraft):
-    return f"""
-    ============= REPORT ==============
-
-    Name: {spacecraft["name"]}
-    Distance: {spacecraft["distance"]} AU
-
-    ===================================
-
-    """
-
-main()
-
-#########################
-
-def main():
-
-    spacecraft = { "name": "James Webb Space Telescsope"}
-    spacecraft["distance"] = 0.01
-    
-    print(create_report(spacecraft))
-
-def create_report(spacecraft):
-    return f"""
-    ============= REPORT ==============
-
-    Name: {spacecraft["name"]}
-    Distance: {spacecraft["distance"]} AU
-
-    ===================================
-    """
-
-main()
-
-#########################
-
-spacecraft = {
-    "name": "James Webb Space Telescsope"
-    }
-spacecraft["distance"] = 0.01
-print(spacecraft.get("owner","Unknown"))                # .get(str,str) => is used to get the value of a key-value
-print(spacecraft)                                       # pair in a dictionary by stating the key, and it returns a default value if stated
-
-########################
-
-spacecraft = {
-    "name": "Voyager 1",
-    "distance" : "12",
-    "owner": "Benjamin"
-}
-spacecraft.update({
-    "company":"Umbrella corp.",
-    "location":"Milky way"
-    })
-
-print(spacecraft["location"])
-
-#########################
-
-distances = {
-    "Voyager 1": 163,
-    "Voyager 2": 135,
-    "Pioneer 10": 80,
-    "Pioneer 11": 44,
-    "New Horizon": 58
+## 2. Using a for loop, print only the names of students from this dictionary who belong to "Griffindor":
+students = {
+    "Hermione": "Griffindor",
+    "Harry": "Griffindor",
+    "Ron": "Griffindor",
+    "Draco": "Slytherin"
 }
 
-def main():
-    for name in distances.keys():
-        print(f"{name} is {distances[name]} AU from Earth.")
+for student in students:
+    if students[student] == "Griffindor":
+        print(student)
 
+# SET 4
 
-main()
-#########################
-
-distances = {
-    "Voyager 1": 163,
-    "Voyager 2": 135,
-    "Pioneer 10": 80,
-    "Pioneer 11": 44,
-    "New Horizon": 58
-}
+## 1. Modify the print_square(size) function to print a rectangle with 3 rows and 6 columns.
 
 def main():
-    for distance in distances.values():
-        print(f"{distance} AU is {convert(distance):,}m")
+    while True:
+        x =int(input("heigth: "))
+        y =int(input("length: "))
 
-def convert(au):
-    return au * 149597870700
+        if x > 0 and y > 0:
+            break
+    
+    rectangle(x,y)
+    
+def rectangle(x,y):
+
+    for i in range(x):
+        print("#" * y)
+
 main()
+
+
+# 2. Write a function print_triangle(height) that prints a right-angled triangle like this:
+
+def main():
+    while True:
+        num = int(input("numbers of row: "))
+        if num > 0:
+            break
+    
+    print_triangle(num)
+
+def print_triangle(row):
+
+    one = 1
+
+    while row >= one:
+        print("#"*one)
+        one +=1
+    
+main()
+
+# 3. 
+
+def print_rectangle():
+
+    while True:
+        rows = int(input("rows: "))
+        cols = int(input("columns: "))
+
+        if rows and cols > 0:
+            break
+
+    print_row(rows,cols)
+
+def print_row(x,y):
+    for _ in range(x):
+        print("#" * y)
+
+
+print_rectangle()

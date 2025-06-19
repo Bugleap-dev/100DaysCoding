@@ -82,7 +82,6 @@ def print_square(size):
 def print_row(width):
     print("#" * width)
 ```    
-This approach demonstrates modular programming, improving readability and reusability.
 
 ### 5. Output Comparisons
 Function Call	Output
@@ -92,5 +91,3 @@ print_column(3)	#\n#\n#\n
 print_row(4)	####
 print_square(4)	####\n####...
 ```
-
-Nested Functions	Same square pattern
